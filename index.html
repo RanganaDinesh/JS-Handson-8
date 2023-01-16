@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array of objects</h1>
+    <h3>"let studentRecords = [ {name: 'John', id: 123, marks : 98 },
+        {name: 'Baba', id: 101, marks : 23 },
+        {name: 'yaga', id: 200, marks : 45 },
+        {name: 'Wick', id: 115, marks : 75 } ] "</h3>
+        <pre>
+            
+     let ans = [];
+    
+for (let i = 0; i less than studentRecord.length; i++) {
+    ans.push(studentRecord[i].name.toUpperCase());
+    
+     } console.log(ans);
+    
+        </pre>
+        <h3>"Question 1 : We are interested in retrieving only the name of the students and all the names should be in caps.
+
+            ['JOHN', 'BABA', 'YAGA', 'WICK']
+            "</h3>
+            let studentRecords = [
+            { name: "John", id: 123, marks: 98 },
+            { name: "Baba", id: 101, marks: 23 },
+            { name: "yaga", id: 200, marks: 45 },
+            { name: "Wick", id: 115, marks: 75 },
+          ];
+    let ans = [];
+
+    for (let i=0;i  less than studentRecord.length;i++) {
+   
+   if(studentRecord[i].marks>50) {
+   
+   ans.push(studentRecord[i]);
+   
+   }
+   
+   }
+   
+   console.log(ans);
+            </pre>
+
+            <h3>
+                Question 3: Retrieve the details of students who scored more than 50 marks and have id greater than 120.
+            </h3>
+            <pre>
+                let studentRecords = [
+                { name: "John", id: 123, marks: 98 },
+                { name: "Baba", id: 101, marks: 23 },
+                { name: "yaga", id: 200, marks: 45 },
+                { name: "Wick", id: 115, marks: 75 },
+              ];
+                let ans = [];
+
+                for (let i=0;i less than studentRecord.length;i++) {
+               
+               if(studentRecord[i].marks>50 && studentRecord[i].id>120) {
+               
+               ans.push(studentRecord[i]);
+               
+               }
+               
+               }
+               
+               console.log(ans);
+            </pre>
+            <h3>4.Question 4: Consider the same scenario we have discussed above, but this time we would like to know the sum total of the marks of the students.</h3>
+            <pre>
+                let studentRecords = [
+                    { name: "John", id: 123, marks: 98 },
+                    { name: "Baba", id: 101, marks: 23 },
+                    { name: "yaga", id: 200, marks: 45 },
+                    { name: "Wick", id: 115, marks: 75 },
+                ];
+                
+                                let ans = [];
+                let totalMarks = studentRecords.reduce((acc, record) => acc + record .marks, 0);
+                console.log(totalMarks);
+            </pre>
+            <h3>Question 5: This time we want to get only the names of the students who scored more than 50 marks from the same dataset used above.</h3>
+            <pre>
+                let studentRecords = [
+                { name: "John", id: 123, marks: 98 },
+                { name: "Baba", id: 101, marks: 23 },
+                { name: "yaga", id: 200, marks: 45 },
+                { name: "Wick", id: 115, marks: 75 },
+  ];
+                let ans = [];
+
+                for (let i=0;i less thanstudentRecord.length;i++) {
+
+                if(studentRecord[i].marks greater than 50) {
+
+                ans.push(studentRecord[i].name);
+
+                }
+
+                }
+
+                console.log(ans);
+            </pre>
+            <h3> Question 6: This time we are required to print the sum of marks of the students with id > 120.</h3>
+            <pre>
+                let studentRecords = [
+                { name: "John", id: 123, marks: 98 },
+                { name: "Baba", id: 101, marks: 23 },
+                { name: "yaga", id: 200, marks: 45 },
+                { name: "Wick", id: 115, marks: 75 },
+  ];
+                let ans = [];
+                let ans = [];
+
+                for (let i=0;i less than studentRecord.length;i++) {
+               
+               if(studentRecord[i].id>120) {
+               
+               ans.push(studentRecord[i]);
+               
+               }
+               
+               }
+               
+               console.log(ans);
+            </pre>
+            <h3>Question 7: This time we are required to print the total marks of the students with marks greater than 50 after a grace of 15 marks has been added to those students who scored less than 50.</h3>
+            <pre>
+                let studentRecords = [
+                    { name: "John", id: 123, marks: 98 },
+                    { name: "Baba", id: 101, marks: 23 },
+                    { name: "yaga", id: 200, marks: 45 },
+                    { name: "Wick", id: 115, marks: 75 },
+                ];
+                
+                let ans = [];
+                for (let i = 0; i < studentRecords.length; i++) {
+                    if (studentRecords[i].marks + 15 > 50) {
+                ans.push(studentRecords[i]);
+                }
+                }
+                console.log(ans);
+            </pre>
+            <h3>Create 6 objects , each object will have name, class, roll no as properties. Store these objects in an array of objects. </h3>
+            <pre>
+                let students = [];
+
+            let student1 = {
+            name: "Dinesh",
+            class: "7",
+            rollNo: "1",
+            };
+
+            let student2 = {
+            name: "karthik",
+            class: "7",
+            rollNo: "2",
+            };
+
+            let student3 = {
+            name: "harish",
+            class: "7",
+            rollNo: "3",
+            };
+
+            let student4 = {
+            name: " Rajesh",
+            class: "7",
+            rollNo: "4",
+            };
+
+            let student5 = {
+            name: "ganesh",
+            class: "7",
+            rollNo: "5",
+            };
+
+            let student6 = {
+            name: "Harsha",
+            class: "7",
+            rollNo: "6",
+            };
+
+            students.push(student1, student2, student3, student4, student5, student6);
+            console.log(students);
+            </pre>
+</body>
+</html>
